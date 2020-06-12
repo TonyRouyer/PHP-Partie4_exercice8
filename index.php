@@ -1,7 +1,7 @@
 <?php
     function addition($nb1 = 2, $nb2 = 3, $nb3 = 5){
         $somme = $nb1 + $nb2 + $nb3;
-        echo $somme;
+        return $somme;
     } 
 ?>
 <!DOCTYPE html>
@@ -13,9 +13,7 @@
     </head>
     <body>
         <p>
-            <?php 
-                addition();
-            ?>
+            <?php echo addition(); ?>
         </p>
     </body>
 </html>
